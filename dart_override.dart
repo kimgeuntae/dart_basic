@@ -29,6 +29,7 @@ class TimesFour extends TimesTwo {
 
   @override
   int calculate() {
-    return super.number * 4;
+    // return super.number * 4;
+    return super.calculate() * 2;
   }
 }
