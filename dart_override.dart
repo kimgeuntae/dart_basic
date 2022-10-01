@@ -26,4 +26,9 @@ class TimesFour extends TimesTwo {
   TimesFour(
     int number,
   ) : super(number);
+
+  @override
+  int calculate() {
+    return super.number * 4;
+  }
 }
