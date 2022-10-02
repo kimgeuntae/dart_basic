@@ -5,9 +5,17 @@ void main() {
 
   bts.sayName();
   redVelvet.sayName();
+  
+  print(bts is IdolInterface);
+  print(bts is BoyGroup);
+  print(bts is GirlGroup);
+  
+  print(redVelvet is IdolInterface);
+  print(redVelvet is BoyGroup);
+  print(redVelvet is GirlGroup);
 }
 
-// abstract interface
+// interface
 abstract class IdolInterface {
   String name;
 
