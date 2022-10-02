@@ -1,6 +1,7 @@
 void main() {
   BoyGroup bts = BoyGroup('BTS');
   GirlGroup redVelvet = GirlGroup('레드벨벳');
+  IdolInterface test = IdolInterface('블랙핑크');
 
   bts.sayName();
   redVelvet.sayName();
