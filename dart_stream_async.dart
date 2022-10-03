@@ -1,14 +1,15 @@
 import 'dart:async';
 
 void main() {
-  calculate(2).listen((val) {
-    print('calculate(2) : $val');
+  playAllStream().listen((val) {
+    print(val);
   });
+}
 
-  // 동시 사용 테스트
-  calculate(4).listen((val) {
-    print('calculate(4) : $val');
-  });
+Stream<int> playAllStream() async* {
+  yield* calculate(1); // yield* : 별을 붙여서 await 와 비슷한 기능을 사용
+  // calculate(1) 이 완료될때까지 기다림
+  yield* calculate(1000);
 }
 
 /*
